@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex flex-col bg-slate-50">
+        <nav class="py-8 px-6 justify-between flex flex-row bg-teal-900 text-white">
+            <a href="" class="">home</a>
+        </nav>
+        <div class="px-6 mt-8">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer class="py-8 bg-teal-900 text-white text-center">
+          <p>i am the footer</p>
+        </footer>
+    </div>
+
+  </body>
+</html>
